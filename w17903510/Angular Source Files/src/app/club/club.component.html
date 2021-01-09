@@ -1,0 +1,32 @@
+<div class="btnContainer">
+  <a  class="btns" (click)="sortByWins()">Sort by Wins</a>
+  <a  class="btns" (click)="sortByPts()">Sort by Points</a>
+  <a  class="btns" (click)="sortByGoals()">sort by Goals</a>
+</div>
+<div>
+
+<table>
+  <tr>
+    <th>Club Name</th>
+    <th>MP</th>
+    <th>W</th>
+    <th>D</th>
+    <th>L</th>
+    <th>GF</th>
+    <th>GA</th>
+    <th>Pts</th>
+  </tr>
+  <tbody *ngIf="clubs">
+    <tr *ngFor="let club of clubs">
+      <td>{{ club.clubName }}</td>
+      <td>{{ club.numOfMatches }}</td>
+      <td>{{ club.clubWins }}</td>
+      <td>{{ club.clubDraws }}</td>
+      <td>{{ club.clubDefeats }}</td>
+      <td>{{ club.seasonGoalsScored }}</td>
+      <td>{{ club.seasonGoalsReceived }}</td>
+      <td>{{ club.clubPoints }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

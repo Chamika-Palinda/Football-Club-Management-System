@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px 150px 0px 150px;
+}
+body {
+  font: 14px/1.4 Georgia, Serif;
+}
+#page-wrap {
+  margin: 50px;
+}
+p {
+  margin: 20px 0;
+}
+
+/*Creating all the Css for Table*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  background: #ffffff;
+}
+th,
+.th {
+  background: #5809a8;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-hidden {
+    display: block;
+  }
+  table,
+  thead,
+  tbody,
+  tr,
+  td {
+    display: block;
+  }
+  table {
+    border: 1px solid #ccc;
+  }
+  tr {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  tr:first-child {
+    display: none;
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+  tr:before,
+  tr:after {
+    content: '';
+    display: table;
+    width: 100%;
+  }
+  tr:after {
+    clear: both;
+  }
+  th, td {
+    color: inherit;
+    background: none;
+    float: left;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  th {
+    border-right: 1px solid #ccc;
+  }
+  th:last-of-type,
+  td:last-of-type {
+    border-bottom: none;
+  }
+}
+
+/*Creating Css for btns*/
+.btnContainer{
+display: flex;
+}
+
+.btns {
+  box-shadow:inset 0px 1px 0px 0px #fff6af;
+  background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color:#ffec64;
+  border-radius:0px;
+  border:1px solid #ffaa22;
+  display:inline-block;
+  cursor:pointer;
+  color:#333333;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:8px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffee66;
+}
+.btns:hover {
+  background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color:#ffab23;
+}
+.btns:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+
+
+
+

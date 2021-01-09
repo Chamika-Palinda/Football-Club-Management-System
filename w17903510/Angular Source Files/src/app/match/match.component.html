@@ -1,0 +1,32 @@
+
+<div>
+  <input type="date" id="dateGetter">
+  <button class="btns" (click)="SearchByDate()">Search</button>
+</div>
+<div>
+  <table>
+    <tr>
+      <th>Match Date</th>
+      <th>Home Club</th>
+      <th>Away Club</th>
+      <th>HG</th>
+      <th>AG</th>
+    </tr>
+
+    <tbody *ngIf="matchs">
+    <tr *ngFor="let match of matchs">
+      <td>{{ match.date.day}} {{match.date.month}} {{match.date.year}}</td>
+      <td>{{ match.team1Name }}</td>
+      <td>{{ match.team2Name }}</td>
+      <td>{{ match.team1Score }}</td>
+      <td>{{ match.team2Score }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer class="fixed-footer">
+  <div class="box">
+    <a (click)="btnRandomMatch()" class="btn btn-white btn-animation-1">Matchmaking</a>
+  </div>
+</footer>
