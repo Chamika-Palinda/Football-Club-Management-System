@@ -1,7 +1,7 @@
 # Angular and play framework project 
 
 <h1>Problem description and requirement statement<h1>
- 
+<p> 
 The details for the implementation of the system are given in the steps below: It is 
 important to follow exactly the specifications and your implementation must conform to 
 these:
@@ -77,6 +77,7 @@ functionality above).
 • Add a button and a textbox which can be used to search for all matches played in 
 a given date. The full details of the matches should be displayed (i.e. both club 
 names and the score).
+ </p>
  <hr>
  
 <h1>Work Flow</h1>
