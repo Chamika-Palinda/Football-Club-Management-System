@@ -1,5 +1,11 @@
 # Angular and play framework project 
 
+<h3>Project Outputs</h3>
+
+![Group 1](https://user-images.githubusercontent.com/76664856/112290589-6831de80-8cb5-11eb-9514-15f8d418c277.png)
+
+
+
 <h1>Problem description and requirement statement</h1>
 
 The details for the implementation of the system are given in the steps below: It is 
